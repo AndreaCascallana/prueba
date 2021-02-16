@@ -1,0 +1,50 @@
+
+
+.modal_tweet {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 600px 1fr;
+    grid-template-rows: 2rem auto 1fr;
+
+    .modal_overlay {
+        grid-area: 1 / 1 / -1 / -1;
+        background-color: rgba(91, 112, 131, .2);;
+    }
+
+    .modal_content {
+        grid-area: 2 / 2 / span 1 / span 1;
+
+        background-color: $white;
+        border-radius: 20px;
+
+        .modal_header {
+            padding: $normal_padding;
+            border-bottom: 1px solid $grey_bold;
+            
+            .close_button {
+
+                span {
+                    color: $corporate_color;
+                }
+            }
+        }
+
+        .modal_body {
+
+            .main_form {
+                border-bottom: 0;
+            }
+        }
+    }
+
+    &.opened {
+        visibility: visible;
+    }
+}

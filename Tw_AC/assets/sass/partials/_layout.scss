@@ -1,0 +1,22 @@
+.twitter {
+    width: 100%;
+    height: 100vh;
+    max-width: 1080px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-gap: 1rem;
+
+    .header {
+        grid-area: 1 / 1 / 1 / 2;
+    }
+
+    .main {
+        grid-area: 1 / 2 / 1 / 3;
+    }
+
+    .aside_trends {
+        grid-area: 1 / 3 / 1 / 4;
+    }
+}

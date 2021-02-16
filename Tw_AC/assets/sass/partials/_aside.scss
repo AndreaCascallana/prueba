@@ -1,0 +1,63 @@
+.aside_trends {
+
+    padding-top: $normal_padding;
+
+    .tweets_amount {
+        padding: $small_padding;
+
+        .amount_title {
+            background-color: $grey_light;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+
+            font-weight: 600;
+            font-size: $font_size_base * 1.15;
+
+            padding: $small_padding $normal_padding;
+            border-bottom: 1px solid $grey_bold;
+        }
+
+        .amount_info {
+            background-color: $grey_light;
+            border-bottom: 1px solid $grey_bold;
+
+            padding: $medium_padding $normal_padding $small_padding $normal_padding;
+            
+            .amount_info_title {
+                font-size: $font_size_base * .85;
+                color: lighten($grey_dark, 20);
+            }
+
+            .total_amount {
+                font-size: $font_size_base * .85;
+                font-weight: 600;
+                color: lighten($grey_dark, 15);
+            }
+        }
+
+        .trending_topic_info {
+            background-color: $grey_light;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+
+            padding: $medium_padding $normal_padding;
+
+            .trending_topic_title {
+                font-size: $font_size_base * .85;
+                color: lighten($grey_dark, 20);
+            }
+
+            .trending_topic {
+                font-size: $font_size_base * .85;
+                font-weight: 600;
+                color: lighten($grey_dark, 15);
+            }
+        }
+    }
+
+    .reset_tweets {
+        padding: $large_padding $small_padding;
+
+        button {}
+    }
+}

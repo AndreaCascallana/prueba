@@ -1,0 +1,63 @@
+
+
+// GENERAL
+
+$web_width: 1080px;
+
+
+
+
+// COLORS
+
+$black: #212121;
+$white: #fff;
+$white_light: #F5F5F5;
+
+$corporate_color: rgb(29,161,242);
+$red: rgb(224, 36, 94);
+$green: rgb(23, 191, 99);
+
+$grey_dark: rgb(91, 112, 131);
+$grey_bold: rgb(235, 238, 240);
+$grey_light: rgb(247, 249, 250);
+
+
+
+
+// TYPO
+
+$font_family_base: 'Source Sans Pro', 'Helvetica', Arial, sans_serif;
+$font_size_base: 16px;
+$font_weight_base: normal;
+$line_height_base: 1.4;
+$body_color: $grey_dark;
+$body_bg: $white;
+
+
+
+
+// MARGINS AND PADDINGS
+
+$headings_margin_bottom: 1em; 
+$paragraph_margin_bottom: 1em;
+
+$small_padding: .5rem;
+$normal_padding: 1rem;
+$medium_padding: 1.5rem;
+$large_padding: 2rem;
+
+$small_margin: .5rem;
+$normal_margin: 1rem;
+$medium_margin: 1.5rem;
+$large_margin: 2rem;
+
+
+
+
+$dt_font_weight: bold; 
+
+$link_decoration: none; 
+$link_hover_decoration: none; 
+$table_cell_padding: .5em; 
+
+$text_muted: lighten($body_color, 15%); 

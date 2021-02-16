@@ -1,0 +1,197 @@
+.header {
+    display: flex;
+    flex-direction: column;
+
+    .logo {
+        padding-top: $normal_padding;
+
+        a {
+
+            span {
+                color: $corporate_color;
+                font-size: $font_size_base * 3;
+
+                transition: all 350ms ease;
+
+                &:hover {
+                    color: darken($corporate_color, 6);
+                }
+            }
+        }
+    }
+
+    .main_navigation {
+        margin-bottom: auto;
+
+        .main_navigation_items {
+            padding: $normal_padding 0 $large_padding * 1.5;
+
+            .main_navigation_item {
+
+                background-color: transparent;
+                color: $grey_dark;
+    
+                padding: $small_padding $normal_padding;
+                border-radius: 20px;
+    
+                font-weight: 600;
+                font-size: $font_size_base * 1.15;
+    
+                transition: all 350ms ease;
+                border: none;
+    
+                &:hover {
+                    background-color: lighten($corporate_color, 40);
+                    color: lighten($corporate_color, 5);
+    
+                    cursor: pointer;
+                }
+    
+                span {
+                    margin-right: .5rem;
+                }
+            }
+        }
+
+        button {    
+            display: block;
+        }
+    }
+
+    .user {
+        display: flex;
+        justify-content: space-between;
+
+        padding-bottom: $normal_padding;
+
+        .header_user_picture {
+            @include full_image;
+            height: 50px;
+            width: 50px;
+            flex-grow: 0;
+
+            img {
+                border-radius: 50%;
+            }
+        }
+
+        .user_content {
+            display: flex;
+            flex-direction: column;
+
+            margin-right: auto;
+            padding-left: $normal_padding;
+
+            .user_name {
+                color: darken($grey_dark, 8);
+                font-weight: bold;
+            }
+
+            .user_account {
+                font-size: $font_size_base * 0.9;
+                color: lighten($grey_dark, 20);
+            }
+        }
+
+        .user_option {
+
+            &:hover {
+                color: darken($grey_dark, 8);
+                cursor: pointer;
+            }
+
+            &.active {
+
+                span {
+                    color: $corporate_color;
+                }
+            }
+
+            span {}
+        }
+
+        .user_submenu {
+            position: fixed;
+            transform: translate(0%, -110%);
+    
+            background-color: $white;
+            border-radius: 10%;
+    
+            box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.1);
+    
+            display: none;
+    
+            &.active {
+                display: block;
+            }
+    
+            .user_info {
+                display: flex;
+                justify-content: space-between;
+    
+                padding: $normal_padding;
+    
+                border-bottom: 1px solid $grey_bold;
+    
+                .user_picture {
+                    @include full_image;
+                    height: 50px;
+                    width: 50px;
+                    flex-grow: 0;
+    
+                    img {
+                        border-radius: 50%;
+                    }
+                }
+    
+                .user_content {
+                    display: flex;
+                    flex-direction: column;
+    
+                    margin-right: auto;
+                    padding-left: $normal_padding;
+                    
+                    .user_name {
+                        color: darken($grey_dark, 8);
+                        font-weight: bold;
+                    }
+    
+                    .user_account {
+                        font-size: $font_size_base * 0.9;
+                        color: lighten($grey_dark, 20);
+                    }
+                }
+    
+                .actual_account {
+                    align-self: center;
+    
+                    span {
+                        color: $corporate_color;
+                    }
+                }
+            }
+    
+            .add_account {
+                padding: $normal_padding;
+    
+                border-bottom: 1px solid $grey_bold;
+
+                &:hover {
+                    color: lighten($grey_dark, 20);
+
+                    cursor: pointer;
+                }
+            }
+    
+            .logout {
+                padding: $normal_padding;
+
+                &:hover {
+                    color: lighten($grey_dark, 20);
+                    
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
